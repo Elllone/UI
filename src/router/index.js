@@ -1,16 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Boss from '@/views/Boss.vue'
+import Mainpage from '@/views/Mainpage.vue'
 import Profiles from '@/views/Profiles.vue'
 
 const routes = [
   {
     path: '/',
-    component:Boss
+    component: Mainpage
   },
   {
     path:'/profiles',
-    component:Profiles,
+    component: Profiles,
   }
 ]
 

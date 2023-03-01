@@ -1,21 +1,15 @@
 <template>
-  <nav-bar></nav-bar>
+  <Menubar :model="NAVBAR_ITEMS" />
   <router-view/>
 </template>
 
-<script>
-import navBar from './components/navBar.vue';
-
-export default{
-  components:{
-    navBar
-  }
-}
-
+<script setup>
+import { NAVBAR_ITEMS } from './constants'; 
+import Menubar from 'primevue/menubar';
 </script>
 
 <style lang="scss">
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 </style>
